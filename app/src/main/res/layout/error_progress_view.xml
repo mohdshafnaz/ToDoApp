@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        tools:visibility="visible"
+        android:id="@+id/error_progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+
+        android:layout_width="@dimen/width350"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/error_image"
+                android:layout_width="@dimen/width100"
+                android:layout_height="@dimen/height100"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:srcCompat="@drawable/error_view_empty"
+                tools:ignore="VectorDrawableCompat"/>
+
+        <TextView
+            android:gravity="center"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:id="@+id/error_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/error_view_empty_list"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:gravity="center"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:id="@+id/error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin10"
+            android:text="Please add"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            tools:visibility="invisible"
+            android:visibility="gone"
+            android:id="@+id/error_retry_btn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin10"
+            android:text="retry" />
+    </LinearLayout>
+
+</LinearLayout>

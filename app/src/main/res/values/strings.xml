@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_note_title">Add To-do Note</string>
+    <string name="title_home">To-do</string>
+    <string name="error_view_empty_list">No records Found!</string>
+    <string name="error_view_general">Something went wrong!!</string>
+    <string name="error_empty_string">Fields Cannot Be Empty</string>
+
+</resources>
